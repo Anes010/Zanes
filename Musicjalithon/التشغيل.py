@@ -120,7 +120,7 @@ async def ytdl(link):
         return 0, stderr.decode()
 
 
-@Client.on_message(filters.command(["بحث"], prefixes=f"{HNDLR}"))
+@Client.on_message(filters.command(["تشغيل", "شغل"], prefixes=f"{HNDLR}"))
 async def play(client, m: Message):
     replied = m.reply_to_message
     chat_id = m.chat.id
@@ -143,7 +143,7 @@ async def play(client, m: Message):
                 await huehue.delete()
                 # await m.reply_to_message.delete()
                 await m.reply_photo(
-                    photo="https://telegra.ph/file/03d6aa5268bf84f4560ae.jpg",
+                    photo="https://telegra.ph/file/acd204de036392761c2ad.jpg",
                     caption=f"""
 **🏷️ العنوان : [{songname}]({link})
 💬 ايدي الدردشة : {chat_id}
@@ -162,7 +162,7 @@ async def play(client, m: Message):
                 await huehue.delete()
                 # await m.reply_to_message.delete()
                 await m.reply_photo(
-                    photo="https://telegra.ph/file/03d6aa5268bf84f4560ae.jpg",
+                    photo="https://telegra.ph/file/acd204de036392761c2ad.jpg",
                     caption=f"""
 **▶ تم تشغيل الاغنية 
 **🏷️ العنوان : [{songname}]({link})
@@ -407,7 +407,7 @@ async def playfrom(client, m: Message):
             await hmm.edit(f"**هناك خطا ** \n`{e}`")
 
 
-@Client.on_message(filters.command(["القائمة", "الطابور"], prefixes=f"{HNDLR}"))
+@Client.on_message(filters.command(["القائمه", "الطابور"], prefixes=f"{HNDLR}"))
 async def playlist(client, m: Message):
     chat_id = m.chat.id
     if chat_id in QUEUE:
