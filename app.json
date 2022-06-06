@@ -1,14 +1,14 @@
 {
-    "name": "ميوزك ايثون",
-    "description": "𝟮𝟬𝟮𝟮 سورس ميوزك ايثون ",
-    "logo": "https://telegra.ph/file/aa0ad3671257edd1ddace.jpg",
+    "name": "ميوزك ا انثون",
+    "description": "𝟮𝟬𝟮𝟮 سورس ميوزك انثون ",
+    "logo": "https://telegra.ph/file/acd204de036392761c2ad.jpg",
     "keywords": [
         "Telegram",
         "MusicPlayer",
         "jmthon",
         "VideoPlayer"
     ],
-    "repository": "https://github.com/byffyyffu/Music",
+    "repository": "https://github.com/Anes010/Zanes",
     "env": {
         "SESSION": {
             "description": "هنا ضع كود البايروكرام",
@@ -21,7 +21,7 @@
         "HNDLR": {
             "description": " ضع هنا رمز الامر الذي تريده كمثال ( . - ! - / - $)",
             "required": false,
-            "value": "!"
+            "value": "/"
         },
         "API_HASH": {
             "description": "هنا ضع الايبي هاش",
